@@ -45,7 +45,7 @@ public class SlideAdapter extends PagerAdapter{
 
     public SlideAdapter(Context context) {
         this.context = context;
-        
+
     }
 
     @Override
