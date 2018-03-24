@@ -43,6 +43,11 @@ public class SlideAdapter extends PagerAdapter{
             Color.rgb(1, 188, 212)
     };
 
+    public SlideAdapter(Context context) {
+        this.context = context;
+        
+    }
+
     @Override
     public int getCount() {
         return list_title.length;
@@ -73,6 +78,6 @@ public class SlideAdapter extends PagerAdapter{
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        super.destroyItem(container, position, object);
+        container.removeView((LinearLayout)object);
     }
 }
