@@ -6,7 +6,9 @@ import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class SlideAdapter extends PagerAdapter{
     Context context;
@@ -53,7 +55,12 @@ public class SlideAdapter extends PagerAdapter{
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        return super.instantiateItem(container, position);
+        inflater = (LayoutInflater) context.getSystemService (context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.slide, container, false);
+        LinearLayout layoutSlide = (LinearLayout) view.findViewById(R.id.slideLinearLayout);
+        ImageView imageViewSlide = (ImageView) view.findViewById(R.id.imageViewSlide);
+        TextView textViewTitle = (TextView) view.findViewById(R.id.textViewTitle);
+        TextView textViewDescription = (TextView) view.findViewById(R.id.textViewDescription);
     }
 
     @Override
