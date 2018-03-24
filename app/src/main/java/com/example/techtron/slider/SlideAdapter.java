@@ -61,6 +61,14 @@ public class SlideAdapter extends PagerAdapter{
         ImageView imageViewSlide = (ImageView) view.findViewById(R.id.imageViewSlide);
         TextView textViewTitle = (TextView) view.findViewById(R.id.textViewTitle);
         TextView textViewDescription = (TextView) view.findViewById(R.id.textViewDescription);
+
+        layoutSlide.setBackgroundColor(list_backgroundColors[position]);
+        imageViewSlide.setImageResource(list_images[position]);
+        textViewTitle.setText(list_title[position]);
+        textViewDescription.setText(list_descriptions[position]);
+
+        container.addView(view);
+        return view;
     }
 
     @Override
