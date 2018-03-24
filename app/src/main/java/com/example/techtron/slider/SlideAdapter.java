@@ -16,10 +16,10 @@ public class SlideAdapter extends PagerAdapter{
 
     //list of images
     public int[] list_images = {
-            R.drawable.spacewale,
-            R.drawable.has_gravity,
-            R.drawable.heavy,
-            R.drawable.the_bat
+            R.drawable.image_1,
+            R.drawable.image_2,
+            R.drawable.image_3,
+            R.drawable.image_4
     };
     //list of string titles
     public String[] list_title = {
@@ -37,7 +37,7 @@ public class SlideAdapter extends PagerAdapter{
     };
     //list of background colors
     public int[] list_backgroundColors = {
-            Color.rgb(55,55,55),
+            Color.rgb(202,202,202),
             Color.rgb(239,85,85),
             Color.rgb(110,49,89),
             Color.rgb(1, 188, 212)
